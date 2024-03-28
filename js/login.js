@@ -1,5 +1,4 @@
 
-
 document.getElementById('btn').addEventListener('click', function(){
     /* email */
     const emailField = document.getElementById('email-field');
