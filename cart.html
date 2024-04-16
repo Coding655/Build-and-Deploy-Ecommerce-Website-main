@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cara</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
@@ -35,7 +41,9 @@
             <a href="contact.html">Contact</a>
           </li>
           <li id="lg-bag">
-            <a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <a class="active" href="cart.html"
+              ><i class="far fa-shopping-bag"></i
+            ></a>
           </li>
           <a href="#" id="close"><i class="far fa-times"></i></a>
         </ul>
@@ -66,29 +74,42 @@
         </thead>
         <tbody>
           <tr>
-            <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+            <td>
+              <a href="#"><i class="far fa-times-circle"></i></a>
+            </td>
             <td><img src="img/products/f1.jpg" alt="" /></td>
             <td>Cartoon Astric Sleeve</td>
-            <td>$118.19</td>
-            <td><input type="number" value="1" min="1" /></td>
-            <td>$118.19</td>
+            <td id="price-1">$118.19</td>
+            <td><input id="input-quantity-1" type="number" value="1" min="1" />
+              <button id="eventHandler" class="btn btn-xs">Add</button>
+            </td>
+
+            <td>$<span id="set-price-1">118.19</span></td>
           </tr>
           <tr>
-            <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+            <td>
+              <a href="#"><i class="far fa-times-circle"></i></a>
+            </td>
             <td><img src="img/products/f2.jpg" alt="" /></td>
             <td>Cartoon Astric Sleeve</td>
-            <td>$118.19</td>
-            <td><input type="number" value="1" min="1" /></td>
-            <td>$118.19</td>
+            <td>$<span  id="get-price">118.19</span></td>
+            <td>
+              <input   id="input-quantity"  type="number" value="1" min="1" />
+              <button onclick="calculateCardsOne()" class="btn btn-xs">Add</button>
+            </td>
+            <td>$<span id="set-price">118.19</span></td>
           </tr>
           <tr>
-            <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+            <td>
+              <a href="#"><i class="far fa-times-circle"></i></a>
+            </td>
             <td><img src="img/products/f3.jpg" alt="" /></td>
             <td>Cartoon Astric Sleeve</td>
             <td>$118.19</td>
-            <td><input type="number" value="1" min="1" /></td>
+            <td><input type="text"> </td>
             <td>$118.19</td>
-
+          </tr>
+        </tbody>
       </table>
     </section>
 
@@ -175,5 +196,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>

@@ -1,22 +1,32 @@
-// const bar = document.getElementById("bar");
-// const close = document.getElementById("close");
-// const nav = document.getElementById("navbar");
+function calculateCardsOne (){
+    /* get Price */
+const getPriceField = document.getElementById('get-price');
+const getPriceValue = getPriceField.innerText;
+const getPriceParse = parseFloat(getPriceValue)
+// console.log(getPriceParse)
 
-// if (bar) {
-//   bar.addEventListener("click", () => {
-//     nav.classList.add("active");
-//   });
-// }
+    /* quantity */
+    const setQuantityField = document.getElementById('input-quantity');
+    const setQuantityValue = setQuantityField.value;
+    const setQuantity = parseFloat(setQuantityValue);
+    setQuantityField.value = '';
+    // console.log(setPriceValue)
+    const totalCalculation = getPriceParse * setQuantity;
+    // console.log(totalCalculation) 
+      
+        /* set price */
 
-// if (close) {
-//   close.addEventListener("click", () => {
-//     nav.classList.remove("active");
-//   });
-// }
+    const setCalculationField = document.getElementById('set-price');
+    const setCalculation = setCalculationField.innerText;
+    // setQuantityField.value = '';
+    setCalculationField.innerText = totalCalculation;
+    // console.log(setCalculation) 
 
 
-function shopNowScroll(){
-  // console.log('working')
-  window.scrollTo(0,900);
-  
+
+
 }
+
+calculateCardsOne();
+
+

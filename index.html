@@ -17,7 +17,7 @@
     <section id="header">
       <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
 
-      <div>
+      <section>
         <ul id="navbar">
           <li>
             <a class="active" href="index.html">Home</a>
@@ -34,15 +34,15 @@
           <li>
             <a href="contact.html">Contact</a>
           </li>
-          <li id="lg-bag">
-            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
-          </li>
           <li>
             <a class="active" href="login.html">Login</a>
           </li>
+          <li id="lg-bag">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+          </li>
           <a href="#" id="close"><i class="far fa-times"></i></a>
         </ul>
-      </div>
+      </section>
       <div id="mobile">
         <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
         <i id="bar" class="fas fa-outdent"></i>
@@ -102,7 +102,9 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <div >
+            <a href="cart.html"><i class="fal fa-shopping-cart cart"></i></a>
+          </div>
         </div>
         <div class="pro">
           <img src="img/products/f2.jpg" alt="" />
@@ -243,7 +245,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href=""><i class="fal fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/n2.jpg" alt="" />
@@ -259,7 +261,7 @@
             </div>
             <h4>$78</h4>
           </div>
-          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+          <a href="#"><i onclick="btnClicked()" class="fal fa-shopping-cart cart"></i></a>
         </div>
         <div class="pro">
           <img src="img/products/n3.jpg" alt="" />
